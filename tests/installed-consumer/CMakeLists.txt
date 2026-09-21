@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(grevir_stepper_consumer LANGUAGES CXX)
+find_package(grevir-stepper CONFIG REQUIRED)
+add_executable(grevir_stepper_consumer main.cpp)
+target_link_libraries(grevir_stepper_consumer PRIVATE grevir::stepper)
+set_target_properties(grevir_stepper_consumer PROPERTIES CXX_EXTENSIONS OFF)

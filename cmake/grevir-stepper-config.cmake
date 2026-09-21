@@ -1,0 +1,6 @@
+include(CMakeFindDependencyMacro)
+find_dependency(grevir-base CONFIG)
+find_dependency(grevir-time CONFIG)
+find_dependency(grevir-core CONFIG)
+find_dependency(grevir-peripherals CONFIG)
+include("${CMAKE_CURRENT_LIST_DIR}/GrevirStepperTargets.cmake")
