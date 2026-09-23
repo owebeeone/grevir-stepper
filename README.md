@@ -1,5 +1,15 @@
 # Grevir Stepper
 
+**Public API:** [Grevir Stepper](https://github.com/owebeeone/grevir-wz/blob/main/docs/api/stepper.md).
+See [installation](https://github.com/owebeeone/grevir-wz/blob/main/docs/install.md) and
+[supported platforms](https://github.com/owebeeone/grevir-wz/blob/main/docs/supported.md).
+The workspace `/docs` is the current user-facing contract; development
+checkpoints below are historical.
+
+Stepper phase sequencing, movement state and a module wrapper.
+
+## Development record (historical)
+
 Stepper phase tables, movement state and a Core module wrapper, extracted from
 Ardoinus `ardOStepper.h`. Public types retain the `step` names. Pins and clocks
 are injected; the package has no Arduino, FastLED or MCU-backend dependency.
