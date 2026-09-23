@@ -19,7 +19,7 @@ endif()
 add_custom_target(grevir_stepper_claim_checks ALL
   COMMAND "${CMAKE_COMMAND}"
     "-DCXX=${CMAKE_CXX_COMPILER}"
-      "-DCOMPILER_ID=${CMAKE_CXX_COMPILER_ID}"
+    "-DCOMPILER_ID=${CMAKE_CXX_COMPILER_ID}"
     "-DINCLUDE_DIRS=$<TARGET_PROPERTY:grevir_stepper_compile,INCLUDE_DIRECTORIES>"
     "-DCASE_SOURCE=${CMAKE_CURRENT_SOURCE_DIR}/pin_claim_probe.cpp"
     "-DLOG_DIR=${CMAKE_CURRENT_BINARY_DIR}/claim-results"
